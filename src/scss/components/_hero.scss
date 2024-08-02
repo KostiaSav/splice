@@ -1,0 +1,37 @@
+.hero {
+    background-image: url("../img/hero_background.jpeg");
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    color: var(--light-color);
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: baseline;
+        height: 100%;
+        
+    }
+
+    .hero-title {
+        margin-top: 0;
+        font-size: 72px;
+        font-weight: 400;
+        line-height: 72px;
+        margin-bottom: 0;
+    }
+
+    .hero-p {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        margin-top: 26px;
+        margin-bottom: 0;
+    }
+
+    .hero-btn {
+        padding: 16px 32px;
+        margin-top: 44px;
+    }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html')
+    @include('partials/message.html')
+    <main class="main">
+      @include('partials/hero.html')
+
+      @include('partials/present.html', {
+        "subtitle": "SOUNDS",
+        "title": "A catalog so deep, it’s dangerous.",
+        "description": "Expertly created and curated samples in any style imaginable. Start swimming in sound.",
+        "buttonText": "Explore Sounds",
+        "imageSrc": "img/content-jpeg-1.png",
+        "textAlign": "left",
+        "order": "1"
+      })
+
+      @include('partials/present.html', {
+        "subtitle": "Connected Experience",
+        "title": "A workflow that actually flows.",
+        "description": "Preview samples in your track’s key and tempo, drag and drop sounds into your DAW, and organize your favorite samples, MIDI and presets in one place.",
+        "buttonText": "",
+        "imageSrc": "img/content-jpeg-2.png",
+        "textAlign": "right",
+        "order": "-1"
+      })
+
+      @include('partials/present.html', {
+        "subtitle": "Gear",
+        "title": "Build a drool-worthy studio,<br> affordably.",
+        "description": "The industry’s top software, all in one place, on payment plans built to work for you.",
+        "buttonText": "Explore Gear",
+        "imageSrc": "img/content-jpeg-3.png",
+        "textAlign": "left",
+        "order": "1"
+      })
+
+      @include('partials/present.html', {
+        "subtitle": "Technology",
+        "title": "Crate dig without the dust.",
+        "description": "Our intelligent search tools help you discover sounds you would normally have to dig to find. Tech breaks the sweat, not you.",
+        "buttonText": "Discover CoSo",
+        "imageSrc": "img/content-jpeg-4.png",
+        "textAlign": "right",
+        "order": "-1"
+      })
+
+      @include("partials/team.html")
+      @include("partials/splice.html")
+    </main>
+    @include('partials/footer.html')
+    <!-- @include('html/h1.html') пример include -->
+  </div>
+</body>
+
+</html>

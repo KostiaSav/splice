@@ -1,0 +1,13 @@
+<section class="present">
+    <div class="container">
+        <div class="content" style="text-align: @textAlign;">
+            <h3 class="present-subtitle">@subtitle</h3>
+            <h2 class="present-title">@title</h2>
+            <p class="present-description">@description</p>
+            @if (buttonText !== "") {
+                <button class="btn--blue btn--present">@buttonText</button>
+            }
+        </div>
+        <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" style="order: @order;" src="@imageSrc" alt="present-image">
+    </div>
+</section>

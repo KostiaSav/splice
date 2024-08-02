@@ -1,0 +1,47 @@
+.present {
+    background-color: #121214;
+    color: white;
+    padding: 48px 0px;
+    .container {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+
+        .content {
+            .present-subtitle {
+                color: rgb(166, 168, 173);
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 14px;
+                margin-top: 0;
+                margin-bottom: 0;
+                text-transform: uppercase;
+            }
+            .present-title {
+                font-size: 28px;
+                font-weight: 400;
+                line-height: 36px;
+                margin-top: 5px;
+                margin-bottom: 0;
+            }
+            .present-description {
+                max-width: 400px;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                margin-top: 12px;
+                margin-bottom: 0;
+            }
+            .btn--present {
+                padding: 7px 20px 10px;
+                margin-top: 18px;
+            }
+        }
+
+        img {
+
+        }
+    }
+}
