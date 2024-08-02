@@ -8,6 +8,11 @@
         justify-content: space-between;
         align-items: center;
         gap: 30px;
+        
+
+        @media screen and (max-width: 733px) {
+            flex-direction: column;
+        }
 
         .content {
             .present-subtitle {
@@ -33,6 +38,10 @@
                 line-height: 24px;
                 margin-top: 12px;
                 margin-bottom: 0;
+
+                @media screen and (max-width: 733px) {
+                    max-width: 500px;
+                }
             }
             .btn--present {
                 padding: 7px 20px 10px;
@@ -41,7 +50,14 @@
         }
 
         img {
+            @media screen and (max-width: 957px) {
+                max-width: 50%;
+            }
 
+            @media screen and (max-width: 733px) {
+                order: -1 !important;
+                max-width: 100%;
+            }
         }
     }
 }

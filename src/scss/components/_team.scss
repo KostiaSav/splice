@@ -1,6 +1,15 @@
 .team {
     background: rgb(18, 18, 20);
     padding: 100px 0px 120px;
+
+    @media screen and (max-width: 613px) {
+        padding: 60px 0px 80px;
+    }
+
+    @media screen and (max-width: 361px) {
+        padding: 40px 0px 60px;
+    }
+
     .container {
         .team-title {
             color: white;
@@ -16,6 +25,11 @@
 
             list-style: none;
             padding-left: 0;
+
+            @media screen and (max-width: 613px) {
+                flex-wrap: wrap;
+            }
+
             .team-item {
                 box-sizing: border-box;
                 max-width: 361px;
@@ -24,6 +38,14 @@
                 background-color: white;
                 border-radius: 8px;
                 background: rgb(248, 248, 248);
+
+                @media screen and (max-width: 927px) {
+                    padding: 18px;
+                }
+
+                @media screen and (max-width: 613px) {
+                    max-width: 100%;
+                }
 
                 .team-center {
                     text-align: center;
@@ -34,12 +56,21 @@
                     border-radius: 50%;
                     width: 223px;
                     height: 223px;
+
+                    @media screen and (max-width: 927px) {
+                        width: 160px;
+                        height: 160px;
+                    }
                 }
 
-                .team--item.description {
+                .team--item-description {
                     color: rgb(0, 0, 0);
                     font-size: 20px;
                     font-weight: 400;
+                    
+                    @media screen and (max-width: 927px) {
+                        font-size: 16px;
+                    }
                 }
 
                 .team--item-name {

@@ -12,4 +12,14 @@
 @import "./components/present";
 @import "./components/splice";
 @import "./components/team";
-@import "./components/message"
+@import "./components/message";
+
+.burger { 
+    color: white !important;
+    margin-left: 18px;
+    z-index: 1001;
+    @include burger;
+    @media screen and ((min-width: 892px)) {
+        display: none;
+    }
+ }

@@ -17,6 +17,18 @@
 
     .footer__main {
         column-count: 6;
+        @media screen and (max-width: 854px) {
+            column-count: 4;    
+        }
+
+        @media screen and (max-width: 600px) {
+            column-count: 2;    
+        }
+
+        @media screen and (max-width: 354px) {
+            column-count: 1;
+        }
+
         .footer__main-item {
             break-inside: avoid-column;
             .footer__main-item-title {
@@ -58,7 +70,12 @@
                 display: flex;
                 align-items: center;
                 gap: 24px;
+                @media screen and (max-width: 410px) {
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                }
                 li {
+                    width: calc(33% - 24px);
                     a {
                         color: rgb(166, 168, 173);
                         font-size: 12px;

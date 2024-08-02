@@ -4,6 +4,9 @@
     background-size: cover;
     height: 90vh;
     color: var(--light-color);
+    @media screen and (max-width: 618px) {
+        height:75vh;
+    }
 
     .container {
         display: flex;
@@ -20,6 +23,10 @@
         font-weight: 400;
         line-height: 72px;
         margin-bottom: 0;
+        @media screen and (max-width: 618px) {
+            font-size: 48px;
+            line-height: 48px;
+        }
     }
 
     .hero-p {
@@ -28,10 +35,17 @@
         line-height: 24px;
         margin-top: 26px;
         margin-bottom: 0;
+        @media screen and (max-width: 618px) {
+            font-size: 16px;
+            line-height: 26px;
+        }
     }
 
     .hero-btn {
         padding: 16px 32px;
         margin-top: 44px;
+        @media screen and (max-width: 618px) {
+            margin-top: 26px;
+        }
     }
 }
