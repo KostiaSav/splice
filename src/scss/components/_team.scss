@@ -56,6 +56,10 @@
                     border-radius: 50%;
                     width: 223px;
                     height: 223px;
+                    transition: .3s;
+                    &:hover {
+                        transform: scale(1.2);
+                    }
 
                     @media screen and (max-width: 927px) {
                         width: 160px;

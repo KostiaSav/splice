@@ -47,6 +47,11 @@
                         font-size: 12px;
                         font-weight: 400;
                         line-height: 18px;
+                        transition: .3s ease-in-out;
+
+                        &:hover {
+                            color: #fff;
+                        }
                     }
                 }
             }
@@ -75,12 +80,19 @@
                     justify-content: space-between;
                 }
                 li {
-                    width: calc(33% - 24px);
+                    @media screen and (max-width: 410px) {
+                        width: calc(33% - 24px);
+                    }
                     a {
                         color: rgb(166, 168, 173);
                         font-size: 12px;
                         font-weight: 400;
                         line-height: 18px;
+                        transition: .3s ease-in-out;
+
+                        &:hover {
+                            color: #fff;
+                        }
                         img {
                             margin-top: 10px;
                         }
